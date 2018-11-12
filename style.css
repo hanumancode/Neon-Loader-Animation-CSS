@@ -25,3 +25,19 @@ body {
     background: linear-gradient(#AAFF00, #FFAA00, #FF00AA, #AA00FF, #00AAFF);
     animation: animate 0.5s linear infinite;
 }
+
+.wrapper .loading span:nth-child(1) {
+    filter: blur(5px);
+}
+
+.wrapper .loading span:nth-child(2) {
+    filter: blur(10px);
+}
+
+.wrapper .loading span:nth-child(3) {
+    filter: blur(25px);
+}
+
+.wrapper .loading span:nth-child(4) {
+    filter: blur(50px);
+}
