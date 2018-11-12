@@ -14,7 +14,7 @@ body {
     height: 100px;
     border-radius: 50%;
     background: linear-gradient(#AAFF00, #FFAA00, #FF00AA, #AA00FF, #00AAFF);
-    animation: animate 0.5s linear infinite;
+    animation: animateRotate 0.5s linear infinite;
 }
 
 .wrapper .loading span {
@@ -40,4 +40,15 @@ body {
 
 .wrapper .loading span:nth-child(4) {
     filter: blur(50px);
+}
+
+.wrapper .loading::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: #262626;
+    border-radius: 50%;
 }
